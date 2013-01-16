@@ -139,7 +139,7 @@ Notification.prototype.render = function(options){
   }
 
   setTimeout(function(){
-    el.removeClass('hide');
+    el.removeClass('cloak');
   }, 0);
 };
 
@@ -229,7 +229,7 @@ Notification.prototype.hide = function(ms){
   }
 
   // hide / remove
-  this.el.addClass('hide');
+  this.el.addClass('cloak');
   if (this._effect) {
     setTimeout(function(self){
       self.remove();
